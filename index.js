@@ -57,7 +57,7 @@ class KeyringController extends EventEmitter {
    */
   fullUpdate() {
     this.emit('update', this.memStore.getState());
-    return this.memStore.getState();
+    return this.store.getState();
   }
 
   /**
